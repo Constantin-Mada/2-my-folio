@@ -35,25 +35,28 @@ h2{
 p{
     font-size: 16px;
     font-weight: 400;
-    line-height: 35px;
+    line-height: 1.4;
    
  }
 
-p1{
+p1 {
     font-size: 30px;
+   
 }
-p2{
+p2 {
     font-size: 68px;
     text-transform: uppercase;
+    letter-spacing: 18px;
+
 }
-p3{
+p3 {
     font-size: 18px;
 }
-p4{
+p4 {
     font-size: 23px;
     font-weight: 800;
 }
-p5{
+p5 {
     font-size: 11px;
     line-height: 13.2px;
 }
@@ -151,22 +154,37 @@ Modules
 .header {
     background-color: #02908A;
 }
+.slider{
+    display: inline-block;
+}
 
-.slider {
-    /*******************************************************
-    de ce nu mi se incarca imaginea si imi apar 
-    cateva erori
-    ******************************************************/
-    width: 100%;
-    height: auto;
-    background-image: url('2- my-folio/design/my folio/Image.jpg');
+.slider img {
+    
+    
+   width: 100%;
+  max-width: 1280px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    text-align: center;
+    
     color: #ffffff;
 }
+.title{
+    display: inline-block;
+    margin-top: -46%;
+    margin-left: 15%;
+    position: absolute;
+    text-align: center;
+    color: #ffffff;
+    line-height: 1.7;
 
+}
+.title img{
+    width: 25%;
+    height: 7%;
+    padding: 5%;
+    
+}
 .about {
     text-align: center;    
 }
@@ -203,16 +221,19 @@ Modules
     display: inline-block;
     background-color: #02918B;
     position: absolute;
-    visibility: visible;
+    visibility: hidden;
     width: 160px;
     height: 140px;
+    margin-top: 1%;
+    margin-left: -21%;
 }
    
-.work-overlay:hover {
+.work-overlay p:hover {
     visibility: visible;
     opacity: 1;
 }
 .work-overlay  span{
+   
     color: white;
     position: absolute;
     top: 50%;
